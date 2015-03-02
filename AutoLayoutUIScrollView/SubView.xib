@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6250" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="SubView">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rgF-nt-OsB">
+                    <rect key="frame" x="1" y="1" width="598" height="598"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kRh-M7-yt0">
+                            <rect key="frame" x="0.0" y="0.0" width="598" height="598"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" red="0.084725033709523001" green="1" blue="0.10832485642693812" alpha="0.59999999999999998" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstItem="kRh-M7-yt0" firstAttribute="top" secondItem="rgF-nt-OsB" secondAttribute="top" id="M61-tK-y7Q"/>
+                        <constraint firstItem="kRh-M7-yt0" firstAttribute="leading" secondItem="rgF-nt-OsB" secondAttribute="leading" id="ZK1-WC-7gs"/>
+                        <constraint firstAttribute="trailing" secondItem="kRh-M7-yt0" secondAttribute="trailing" id="flF-b1-dAR"/>
+                        <constraint firstAttribute="bottom" secondItem="kRh-M7-yt0" secondAttribute="bottom" id="qjw-kX-jpU"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="rgF-nt-OsB" secondAttribute="trailing" constant="1" id="E3s-Bm-ftS"/>
+                <constraint firstAttribute="bottom" secondItem="rgF-nt-OsB" secondAttribute="bottom" constant="1" id="Xvp-FC-m6J"/>
+                <constraint firstItem="rgF-nt-OsB" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="1" id="lMV-pc-K7S"/>
+                <constraint firstItem="rgF-nt-OsB" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="1" id="n4S-LD-cq8"/>
+            </constraints>
+            <connections>
+                <outlet property="textLabel" destination="kRh-M7-yt0" id="w0Q-xv-bbH"/>
+            </connections>
+        </view>
+    </objects>
+</document>
